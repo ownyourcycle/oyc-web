@@ -38,15 +38,15 @@ const KonzultaciePage = () => {
             <div id="right-side mt-6 md:mt-12">
               <div className="prose mt-6 md:mt-0">
                 <p>
-                  <strong>Nie si si istá vlastným vyhodnotením cyklu?</strong> Ak si chceš byť istá v tom, čo sa deje v
-                  tvojom cykle, neváhaj využiť spoluprácu so mnou.
+                  <strong>Nie si si istá vlastným vyhodnotením cyklu?</strong> Vždy je dobré sa vo svojom zázname
+                  uistiť, preto neváhaj využiť spoluprácu so mnou.
                 </p>
                 <p>
                   E-mailom ti vyhodnotím tvoj záznam (alebo opravím tvoje vyhodnotenie). Pošli mi ho v klasickej
-                  papierovej tabuľke pre STM (získaš ju odomňa zdarma) alebo exportovaný z aplikácie Read Your Body. Ak
-                  máš k svojmu záznamu otázky, rada ti na ne odpoviem.{' '}
+                  záznamovej tabuľke pre STM (získaš ju odomňa ZDARMA) alebo exportovaný z aplikácie Read Your Body. Ak
+                  máš k svojmu záznamu otázky, rada ti na ne odpoviem (nejde o zdravotnú konzultáciu).{' '}
                 </p>
-                <p>Záznam s odpoveďami na tvoje otázky k nemu ti vyhodnotím do 48 hod.</p>
+                <p>Záznam s odpoveďami na tvoje otázky ti vyhodnotím do 48 hod.</p>
               </div>
               <div className="mt-6">
                 <Link href="#vyhodnotenie">
@@ -75,13 +75,18 @@ const KonzultaciePage = () => {
                     <strong>Hneď si stiahni</strong> záznamovú tabuľku - cez stránku je možné ju otvoriť iba raz!
                   </li>
                   <li>
-                    <strong>Priprav si záznam</strong> s údajmi na vyhodnotenie buď v zázname, ktorý odomňa dostaneš
-                    alebo v zázname exportovanom z appky Read Your Body (nezabudni <strong>vyplniť pravú stranu</strong>{' '}
-                    záznamu alebo tieto informácie dodať v maili, ak mi posielaš záznam z appky{' '}
+                    <strong>Priprav si záznam</strong> s údajmi na vyhodnotenie - buď v zázname, ktorý odomňa dostaneš,
+                    alebo v zázname exportovanom z appky{' '}
                     <Link href="https://apps.apple.com/us/app/read-your-body/id1488117813">Read Your Body</Link>)
+                    (nezabudni <strong>vyplniť pravú stranu</strong> klasického záznamu alebo tieto informácie dodať v
+                    maili.
                   </li>
                   <li>
-                    <strong>Pošli mi záznam s údajmi + otázky</strong> k záznamu, ak nejaké máš na hello@ownyourcycle.sk
+                    <strong>Pošli mi záznam s údajmi + tvoje otázky</strong> k záznamu na{' '}
+                    <Link href="mailto:hello@ownyourcycle.com">
+                      <a>hello@ownyourcycle.com</a>
+                    </Link>
+                    . Do predmetu mailu napíš &quot;KONZULTÁCIA&quot;.
                   </li>
                   <li>
                     <strong>Získaš podrobne vyhodnotený záznam</strong> aj s odpoveďami na tvoje otázky (do 48 hod.)
@@ -102,16 +107,19 @@ const KonzultaciePage = () => {
             <h2 className="text-4xl font-semibold text-center">Na čo nezabudnúť</h2>
             <div className="md:w-1/2 mx-auto mt-6 prose">
               <p>
-                Na vyhodnotenie záznamu sú potrebné doplnkové informácie, prosím nezabudni mi ich dodať. V prijatej
-                záznamovej tabuľke sa nachádzajú v pravej časti záznamu.
+                Na vyhodnotenie záznamu sú potrebné doplnkové informácie, prosím nezabudni mi ich dodať. V záznamovej
+                tabuľke, ktorá ti odo mmňa zdarma príde, sa nachádzajú v pravej časti záznamu.
               </p>
-              <p>Ak posielaš záznam z appky Read Your Body, napíš mi tieto informácie do odosielaného e-mailu.</p>
+              <p>
+                Ak mi po zakúpení posielaš záznam z appky Read Your Body, napíš mi tieto informácie do e-mailu s tvojím
+                záznamom:
+              </p>
               <ul>
-                <li>O koľký cyklus STM ide</li>
-                <li>Miesto merania</li>
-                <li>Najskorší deň vzostupu teploty za posledných 12 cyklov</li>
-                <li>Najkratšia dĺžku cyklu za posledných 12 cyklov</li>
-                <li>Špeciálna situácia (1. cyklus po vysadení HAK, po pôrode...)</li>
+                <li>o koľký cyklus STM ide,</li>
+                <li>miesto merania,</li>
+                <li>najskorší deň vzostupu teploty za posledných 12 cyklov,</li>
+                <li>najkratšia dĺžku cyklu za posledných 12 cyklov,</li>
+                <li>špeciálna situácia (1. cyklus po vysadení HAK, po pôrode...).</li>
               </ul>
             </div>
 
@@ -135,7 +143,7 @@ const KonzultaciePage = () => {
               <div className="prose mt-auto">
                 <div className="text-center font-semibold border-b mb-3 pb-3">Získaš</div>
                 <ul>
-                  <li>podrobné vyhodnotenie cyklu</li>
+                  <li>podrobné vyhodnotenie záznamu</li>
                   <li>záznamová tabuľka zdarma</li>
                   <li>jednoduchá e-mailová komunikácia</li>
                   <li>rýchla platobná metóda</li>
