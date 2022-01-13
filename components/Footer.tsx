@@ -6,9 +6,9 @@ export const Footer = () => {
       <div className="container px-5 py-8 mx-auto flex justify-center">
         <p className="text-center">
           <strong className="font-bold p-2">UPOZORNENIE:</strong>
-          Informácie z kurzu a s ním súvisiacimi materiálmi slúžia iba na informačné účely. Ich účelom nie je
+          Informácie z tejto stránky a s ňou súvisiacimi materiálmi slúžia iba na informačné účely. Ich účelom nie je
           diagnostikovať, liečiť alebo nahradiť lekársku pomoc. Autorka projektu na seba neberie medicínsku a právnu
-          zodpovednosť za používanie metód a odporúčaní uvedených v obsahu tohto kurzu a s ním súvisiacimi materiálmi.
+          zodpovednosť za používanie metód a odporúčaní uvedených v obsahu tejto stránky a s ňou súvisiacimi materiálmi.
         </p>
       </div>
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
