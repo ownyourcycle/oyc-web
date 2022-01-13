@@ -131,7 +131,7 @@ const KonzultaciePage = () => {
           <div className="p-8 md:p-24">
             <div className="flex flex-col md:mx-auto md:w-96 items-center bg-white p-12 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold text-center">Vyhodnotenie záznamu</h3>
-              <div className="mt-6 text-red-500 text-lg">Uvádzacia cena</div>
+              <div className="mt-6 text-red-500 text-lg font-semibold">Uvádzacia cena</div>
               <div className="my-6 text-4xl text-bold" id="price">
                 10 €
               </div>
