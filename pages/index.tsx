@@ -14,7 +14,7 @@ const HomePage = () => {
       </Head>
 
       {/* Hero section */}
-      <header className="h-full p-12 z-0 hero-gradient h-screen">
+      <header className="h-full p-12 z-0 hero-gradient min-h-screen">
         <div className="text-center z-10">
           <h1 className="text-6xl font-bold title-font text-black text-opacity-75 mt-12">{headline}</h1>
           <p className="text-3xl text-gray-700 font-thin leading-relaxed mx-auto mt-6">{description}</p>
