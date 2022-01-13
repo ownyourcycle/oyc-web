@@ -4,7 +4,7 @@ import logoIcon from '../assets/logo.png'
 
 export const Navigation = () => {
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-white p-4">
+    <nav className="flex items-center justify-between bg-white p-4">
       <div className="flex items-center">
         <Link href="/" passHref>
           <div className="flex items-center cursor-pointer">
