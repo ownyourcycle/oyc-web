@@ -14,7 +14,7 @@ const KontaktPage = () => {
         </section>
 
         <section className="container mx-auto">
-          <div className="mt-6 bg-white p-12 shadow-sm mx-auto text-xl flex justify-center items-center">
+          <div className="mt-6 bg-white p-12 shadow-sm mx-auto text-xl flex flex-wrap flex-col md:flex-row justify-center items-center">
             <div className="flex justify-center">
               <div className="mr-2">Email: </div>
               <div>
@@ -25,7 +25,7 @@ const KontaktPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="px-6 text-4xl text-gray-400 font-thin">|</div>
+            <div className="px-6 text-4xl text-gray-400 font-thin hidden md:block">|</div>
             <div className="flex justify-center">
               <div className="mr-2">Instagram: </div>
               <div>
