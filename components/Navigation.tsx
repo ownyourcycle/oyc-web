@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import logoIcon from '../assets/icon.png'
+import logoIcon from '../assets/logo.png'
 
 export const Navigation = () => {
   return (
@@ -22,6 +22,9 @@ export const Navigation = () => {
         </Link> */}
         <Link href="/konzultacie">
           <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-400 mr-4">Konzultácie</a>
+        </Link>
+        <Link href="/kontakt">
+          <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-400 mr-4">Kontakt</a>
         </Link>
       </div>
     </nav>

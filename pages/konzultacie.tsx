@@ -12,7 +12,7 @@ const KonzultaciePage = () => {
       <Head>
         <title>Konzultácie | Own Your Cycle</title>
       </Head>
-      <div className="bg-red-100 pt-12 px-2">
+      <div className="bg-red-50 pt-12 px-2">
         <section className="container mx-auto">
           <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácie</h1>
           <p className="mt-6 text-center text-2xl">Buď o krok bližšie k porozumeniu STM!</p>
@@ -102,33 +102,32 @@ const KonzultaciePage = () => {
               mi tieto informácie do odosielaného e-mailu.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-6 mt-6">
-              <div className="flex-1 bg-red-50 shadow-sm text-center flex items-center justify-center p-6">
+            <div className="flex flex-col md:flex-row gap-6 mt-6 px-6">
+              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
                 O koľký cyklus STM ide
               </div>
-              <div className="flex-1 bg-red-50 shadow-sm text-center flex items-center justify-center p-6">
+              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
                 Miesto merania
               </div>
-              <div className="flex-1 bg-red-50 shadow-sm text-center flex items-center justify-center p-6">
+              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
                 Najskorší deň vzostupu teploty za posledných 12 cyklov
               </div>
-              <div className="flex-1 bg-red-50 shadow-sm text-center flex items-center justify-center p-6">
+              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
                 Najkratšia dĺžku cyklu za posledných 12 cyklov
               </div>
-              <div className="flex-1 bg-red-50 shadow-sm text-center flex items-center justify-center p-6">
+              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
                 Špeciálna situácia (1. cyklus po vysadení HAK, po pôrode...)
               </div>
+            </div>
+            <div className="flex justify-center mt-6 ">
+              <Link href="#vyhodnotenie">
+                <a className="btn-primary">Pomôž mi s vyhodnotením</a>
+              </Link>
             </div>
           </div>
         </section>
 
         <section className="container mx-auto" id="vyhodnotenie">
-          <div className="flex justify-center mt-6 ">
-            <Link href="/">
-              <a className="btn-primary">Pomôž mi s vyhodnotením</a>
-            </Link>
-          </div>
-
           <div className="p-8 md:p-24">
             <div className="flex flex-col md:mx-auto md:w-96 items-center bg-white p-12 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold text-center">Vyhodnotenie záznamu</h3>
@@ -148,7 +147,7 @@ const KonzultaciePage = () => {
                 </ul>
               </div>
               <div className="mt-6">
-                <Link href="/">
+                <Link href="https://www.buymeacoffee.com/ownyourcycle">
                   <a className="btn-primary">Kúpiť</a>
                 </Link>
               </div>
@@ -157,13 +156,13 @@ const KonzultaciePage = () => {
         </section>
 
         <section className="container mx-auto">
-          <div className="flex mt-6 p-12">
+          <div className="flex mt-6 p-12 pb-24">
             <h2 className="text-2xl font-bold p">Máš nejaké otázky?</h2>
             <div className="pl-12">
               <p className="pb-6">Je ti niečo nejasné? Neváhaj ma kontaktovať!</p>
-              <a href="mailto:hello@ownyourcycle.com" className="btn-secondary">
-                Kontaktuj ma!
-              </a>
+              <Link href="/kontakt" passHref>
+                <a className="btn-secondary">Kontaktuj ma!</a>
+              </Link>
             </div>
           </div>
         </section>
