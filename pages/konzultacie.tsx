@@ -30,7 +30,7 @@ const KonzultaciePage = () => {
           </div>
         </section>
 
-        <section className="p-12 container mx-auto">
+        <section className="p-4 container mx-auto">
           <div className="bg-white p-12 shadow-md">
             <h2 className="mt-6 md:mt-12 text-4xl text-left font-semibold">Konzultácia záznamu</h2>
             <div className="mt-6 prose">
@@ -53,7 +53,7 @@ const KonzultaciePage = () => {
           </div>
         </section>
 
-        <section className="p-12 container mx-auto">
+        <section className="p-4 container mx-auto">
           <div className="bg-white p-12 shadow-md flex flex-wrap md:flex-nowrap">
             <div id="left-side mt-6 md:mt-12">
               <h2 className="text-4xl text-left font-semibold">Ako to funguje?</h2>
