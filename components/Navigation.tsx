@@ -13,7 +13,7 @@ export const Navigation = () => {
           </div>
         </Link>
       </div>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row gap-4 items-center">
         {/* <Link href="/o-mne">
           <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">O mne</a>
         </Link> */}
@@ -21,10 +21,10 @@ export const Navigation = () => {
           <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">O projekte</a>
         </Link> */}
         <Link href="/konzultacie">
-          <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-400 mr-4">Konzultácie</a>
+          <a className="text-gray-600 hover:text-gray-400">Konzultácie</a>
         </Link>
         <Link href="/kontakt">
-          <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-gray-400 mr-4">Kontakt</a>
+          <a className="text-gray-600  hover:text-gray-400">Kontakt</a>
         </Link>
       </div>
     </nav>

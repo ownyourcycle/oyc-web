@@ -30,36 +30,40 @@ const KonzultaciePage = () => {
           </div>
         </section>
 
-        <section className="p-4 container mx-auto">
-          <div className="bg-white p-12 shadow-md">
-            <h2 className="mt-6 md:mt-12 text-4xl text-left font-semibold">Konzultácia záznamu</h2>
-            <div className="mt-6 prose">
-              <p>
-                <strong>Nie si si istá vlastným vyhodnotením cyklu?</strong> Ak si chceš byť istá v tom, čo sa deje v
-                tvojom cykle, neváhaj využiť spoluprácu so mnou.
-              </p>
-              <p>
-                E-mailom ti vyhodnotím tvoj záznam (alebo opravím tvoje vyhodnotenie). Pošli mi ho v klasickej
-                papierovej tabuľke pre STM (získaš ju odomňa zdarma) alebo exportovaný z aplikácie Read Your Body. Ak
-                máš k svojmu záznamu otázky, rada ti na ne odpoviem.{' '}
-              </p>
-              <p>Záznam s odpoveďami na tvoje otázky k nemu ti vyhodnotím do 48 hod.</p>
+        <section className="p-4 md:p-12 container mx-auto">
+          <div className="bg-white p-12 shadow-md flex flex-wrap md:flex-nowrap">
+            <div id="left-side mt-6 md:mt-12">
+              <h2 className="text-4xl text-left font-semibold pr-4">Konzultácia záznamu</h2>
             </div>
-            <div className="mt-6">
-              <Link href="#vyhodnotenie">
-                <a className="btn-primary">Chcem mať v cykle jasno</a>
-              </Link>
+            <div id="right-side mt-6 md:mt-12">
+              <div className="prose mt-6 md:mt-0">
+                <p>
+                  <strong>Nie si si istá vlastným vyhodnotením cyklu?</strong> Ak si chceš byť istá v tom, čo sa deje v
+                  tvojom cykle, neváhaj využiť spoluprácu so mnou.
+                </p>
+                <p>
+                  E-mailom ti vyhodnotím tvoj záznam (alebo opravím tvoje vyhodnotenie). Pošli mi ho v klasickej
+                  papierovej tabuľke pre STM (získaš ju odomňa zdarma) alebo exportovaný z aplikácie Read Your Body. Ak
+                  máš k svojmu záznamu otázky, rada ti na ne odpoviem.{' '}
+                </p>
+                <p>Záznam s odpoveďami na tvoje otázky k nemu ti vyhodnotím do 48 hod.</p>
+              </div>
+              <div className="mt-6">
+                <Link href="#vyhodnotenie">
+                  <a className="btn-primary">Chcem mať v cykle jasno</a>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="p-4 container mx-auto">
+        <section className="p-4 md:p-12 container mx-auto">
           <div className="bg-white p-12 shadow-md flex flex-wrap md:flex-nowrap">
-            <div id="left-side mt-6 md:mt-12">
-              <h2 className="text-4xl text-left font-semibold">Ako to funguje?</h2>
+            <div id="left-side md:w-64 mt-6 md:mt-12">
+              <h2 className="text-4xl text-left font-semibold pr-4">Ako to funguje?</h2>
             </div>
             <div id="right-side mt-6 md:mt-12">
-              <p className="prose">
+              <div className="prose mt-6 md:mt-0">
                 <ol>
                   <li>
                     <strong>Podpor ma</strong> jednoduchým spôsobom platby kartou.
@@ -83,7 +87,7 @@ const KonzultaciePage = () => {
                     <strong>Získaš podrobne vyhodnotený záznam</strong> aj s odpoveďami na tvoje otázky (do 48 hod.)
                   </li>
                 </ol>
-              </p>
+              </div>
               <div className="mt-6">
                 <Link href="#vyhodnotenie">
                   <a className="btn-primary">Chcem konzultáciu záznamu</a>
@@ -96,29 +100,21 @@ const KonzultaciePage = () => {
         <section className="container mx-auto">
           <div className="mt-12">
             <h2 className="text-4xl font-semibold text-center">Na čo nezabudnúť</h2>
-            <p className="md:w-1/2 text-center mx-auto mt-6">
-              Na vyhodnotenie záznamu sú potrebné doplnkové informácie, prosím nezabudni mi ich dodať. V prijatej
-              záznamovej tabuľke sa nachádzajú v pravej časti záznamu. Ak posielaš záznam z appky Read Your Body, napíš
-              mi tieto informácie do odosielaného e-mailu.
-            </p>
-
-            <div className="flex flex-col md:flex-row gap-6 mt-6 px-6">
-              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
-                O koľký cyklus STM ide
-              </div>
-              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
-                Miesto merania
-              </div>
-              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
-                Najskorší deň vzostupu teploty za posledných 12 cyklov
-              </div>
-              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
-                Najkratšia dĺžku cyklu za posledných 12 cyklov
-              </div>
-              <div className="flex-1 bg-white shadow-sm text-center flex items-center justify-center p-6">
-                Špeciálna situácia (1. cyklus po vysadení HAK, po pôrode...)
-              </div>
+            <div className="md:w-1/2 mx-auto mt-6 prose">
+              <p>
+                Na vyhodnotenie záznamu sú potrebné doplnkové informácie, prosím nezabudni mi ich dodať. V prijatej
+                záznamovej tabuľke sa nachádzajú v pravej časti záznamu.
+              </p>
+              <p>Ak posielaš záznam z appky Read Your Body, napíš mi tieto informácie do odosielaného e-mailu.</p>
+              <ul>
+                <li>O koľký cyklus STM ide</li>
+                <li>Miesto merania</li>
+                <li>Najskorší deň vzostupu teploty za posledných 12 cyklov</li>
+                <li>Najkratšia dĺžku cyklu za posledných 12 cyklov</li>
+                <li>Špeciálna situácia (1. cyklus po vysadení HAK, po pôrode...)</li>
+              </ul>
             </div>
+
             <div className="flex justify-center mt-6 ">
               <Link href="#vyhodnotenie">
                 <a className="btn-primary">Pomôž mi s vyhodnotením</a>
