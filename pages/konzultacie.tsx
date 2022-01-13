@@ -32,8 +32,8 @@ const KonzultaciePage = () => {
 
         <section className="p-12 container mx-auto">
           <div className="bg-white p-12 shadow-md">
-            <h2 className="mt-12 text-4xl text-left font-semibold">Konzultácia záznamu</h2>
-            <div className="mt-6 w-2/3 prose">
+            <h2 className="mt-6 md:mt-12 text-4xl text-left font-semibold">Konzultácia záznamu</h2>
+            <div className="mt-6 prose">
               <p>
                 <strong>Nie si si istá vlastným vyhodnotením cyklu?</strong> Ak si chceš byť istá v tom, čo sa deje v
                 tvojom cykle, neváhaj využiť spoluprácu so mnou.
@@ -55,11 +55,11 @@ const KonzultaciePage = () => {
 
         <section className="p-12 container mx-auto">
           <div className="bg-white p-12 shadow-md flex flex-wrap md:flex-nowrap">
-            <div id="left-side">
+            <div id="left-side mt-6 md:mt-12">
               <h2 className="text-4xl text-left font-semibold">Ako to funguje?</h2>
             </div>
-            <div id="right-side">
-              <p className="w-2/3 prose">
+            <div id="right-side mt-6 md:mt-12">
+              <p className="prose">
                 <ol>
                   <li>
                     <strong>Podpor ma</strong> jednoduchým spôsobom platby kartou.

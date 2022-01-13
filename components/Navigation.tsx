@@ -13,7 +13,7 @@ export const Navigation = () => {
           </div>
         </Link>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-row items-center">
         {/* <Link href="/o-mne">
           <a className="block mt-4 lg:inline-block lg:mt-0 text-teal-lighter hover:text-white mr-4">O mne</a>
         </Link> */}
