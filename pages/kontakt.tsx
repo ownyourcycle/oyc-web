@@ -7,7 +7,7 @@ const KontaktPage = () => {
       <Head>
         <title>Kontakt | Own Your Cycle</title>
       </Head>
-      <div className="bg-red-50 pt-12 px-2 h-screen">
+      <div className="bg-red-50 pt-12 px-2 min-h-screen">
         <section className="container mx-auto">
           <h1 className="mt-12 text-6xl text-center font-semibold">Kontakt</h1>
           <p className="mt-6 text-center text-2xl">Kde ma nájdeš?</p>
