@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-primary {
+    @apply bg-red-300 hover:bg-red-400 transition-colors text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-red-200 transition-colors text-black font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base;
+  }
+}
+
 /*
  Custom CSS classes -> https://tailwindcss.com/docs/custom-css-classes
 */

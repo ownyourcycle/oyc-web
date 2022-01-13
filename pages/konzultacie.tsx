@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import TFH from '../assets/TFH.svg'
+import TTA from '../assets/TTA.svg'
+import TTC from '../assets/TTC.svg'
 
 const KonzultaciePage = () => {
   return (
@@ -12,18 +17,15 @@ const KonzultaciePage = () => {
           <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácie</h1>
           <p className="mt-6 text-center text-2xl">Buď o krok bližšie k porozumeniu STM!</p>
           <p className="mt-6 text-center">Naplň svoj cieľ vďaka sympto-termálnej metóde.</p>
-        </section>
 
-        <section className="container mx-auto">
+          <div className="flex justify-center mt-6">
+            <Image src={TTA} alt="TTA" width={200} height={200} />
+            <Image src={TTC} alt="TTC" width={200} height={200} />
+            <Image src={TFH} alt="TFH" width={200} height={200} />
+          </div>
           <div className="flex justify-center my-6">
-            <Link href="/" passHref>
-              {/* <a className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-              Mám záujem o konzultáciu
-            </a> */}
-
-              <a className="bg-red-300 text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base ">
-                Mám záujem
-              </a>
+            <Link href="#vyhodnotenie" passHref>
+              <a className="btn-primary">Mám záujem</a>
             </Link>
           </div>
         </section>
@@ -44,10 +46,8 @@ const KonzultaciePage = () => {
               <p>Záznam s odpoveďami na tvoje otázky k nemu ti vyhodnotím do 48 hod.</p>
             </div>
             <div className="mt-6">
-              <Link href="/">
-                <a className="bg-red-300 text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base ">
-                  Chcem mať v cykle jasno
-                </a>
+              <Link href="#vyhodnotenie">
+                <a className="btn-primary">Chcem mať v cykle jasno</a>
               </Link>
             </div>
           </div>
@@ -85,10 +85,8 @@ const KonzultaciePage = () => {
                 </ol>
               </p>
               <div className="mt-6">
-                <Link href="/">
-                  <a className="bg-red-300 text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base ">
-                    Chcem konzultáciu záznamu
-                  </a>
+                <Link href="#vyhodnotenie">
+                  <a className="btn-primary">Chcem konzultáciu záznamu</a>
                 </Link>
               </div>
             </div>
@@ -121,14 +119,14 @@ const KonzultaciePage = () => {
                 Špeciálna situácia (1. cyklus po vysadení HAK, po pôrode...)
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="flex justify-center mt-6 ">
-              <Link href="/">
-                <a className="bg-red-300 text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base ">
-                  Pomôž mi s vyhodnotením
-                </a>
-              </Link>
-            </div>
+        <section className="container mx-auto" id="vyhodnotenie">
+          <div className="flex justify-center mt-6 ">
+            <Link href="/">
+              <a className="btn-primary">Pomôž mi s vyhodnotením</a>
+            </Link>
           </div>
 
           <div className="p-8 md:p-24">
@@ -151,9 +149,7 @@ const KonzultaciePage = () => {
               </div>
               <div className="mt-6">
                 <Link href="/">
-                  <a className="bg-red-300 hover:bg-red-400 transition-colors text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base ">
-                    Kúpiť
-                  </a>
+                  <a className="btn-primary">Kúpiť</a>
                 </Link>
               </div>
             </div>
@@ -165,11 +161,9 @@ const KonzultaciePage = () => {
             <h2 className="text-2xl font-bold p">Máš nejaké otázky?</h2>
             <div className="pl-12">
               <p className="pb-6">Je ti niečo nejasné? Neváhaj ma kontaktovať!</p>
-              <Link href="/">
-                <a className="bg-red-300 text-white font-bold uppercase px-5 py-3 inline-flex items-center justify-center  border border-transparent text-base ">
-                  Kontaktuj ma!
-                </a>
-              </Link>
+              <a href="mailto:hello@ownyourcycle.com" className="btn-secondary">
+                Kontaktuj ma!
+              </a>
             </div>
           </div>
         </section>
