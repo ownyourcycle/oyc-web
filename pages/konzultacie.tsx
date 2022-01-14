@@ -151,7 +151,7 @@ const KonzultaciePage = () => {
                 </ul>
               </div>
               <div className="mt-6">
-                <Link href="https://www.buymeacoffee.com/ownyourcycle">
+                <Link href="https://www.buymeacoffee.com/ownyourcycle/extras">
                   <a className="btn-primary">Kúpiť</a>
                 </Link>
               </div>
