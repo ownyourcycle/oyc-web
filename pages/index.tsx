@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import OYC from '../assets/OYC.svg'
+import { Subscribe } from '../components/Subscribe'
 
 const HomePage = () => {
   const headline = 'Own Your Cycle'
@@ -31,6 +32,20 @@ const HomePage = () => {
             <Link href="/kontakt">
               <a className="btn-secondary">Kontakt</a>
             </Link>
+          </div>
+          <div className="container mx-auto">
+            <div className="bg-white p-6 shadow-md mt-12">
+              <h2 className="text-4xl font-bold title-font text-black text-opacity-75 mt-12">
+                Buď so mnou v kontakte!
+              </h2>
+              <div className="mt-6">
+                Prihlás sa na odber newslettera pre informácie o aktuálnych & pripravovaných ponukách a novinkách od Own
+                Your Cycle.
+              </div>
+              <div className="flex justify-center mt-6">
+                <Subscribe />
+              </div>
+            </div>
           </div>
         </div>
       </header>
