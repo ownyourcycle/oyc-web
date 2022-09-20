@@ -18,9 +18,9 @@ const KontaktPage = () => {
             <div className="flex justify-center">
               <div className="mr-2">Email: </div>
               <div>
-                <Link href="mailto:hello@ownyourcycle.com">
+                <Link href="mailto:ownyourcycle@gmail.com">
                   <a className="font-semibold border-b-2 hover:border-black transition-colors">
-                    hello@ownyourcycle.com
+                    ownyourcycle@gmail.com
                   </a>
                 </Link>
               </div>

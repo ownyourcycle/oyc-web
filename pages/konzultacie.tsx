@@ -83,8 +83,8 @@ const KonzultaciePage = () => {
                   </li>
                   <li>
                     <strong>Pošli mi záznam s údajmi + tvoje otázky</strong> k záznamu na{' '}
-                    <Link href="mailto:hello@ownyourcycle.com">
-                      <a>hello@ownyourcycle.com</a>
+                    <Link href="mailto:ownyourcycle@gmail.com">
+                      <a>ownyourcycle@gmail.com</a>
                     </Link>
                     . Do predmetu mailu napíš &quot;KONZULTÁCIA&quot;.
                   </li>
