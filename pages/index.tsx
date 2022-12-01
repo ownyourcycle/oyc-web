@@ -26,8 +26,11 @@ const HomePage = () => {
             <Image src={OYC} alt="TTA" width={400} height={400} />
           </div>
           <div className="flex justify-center gap-2 mt-12">
-            <Link href="/konzultacie">
-              <a className="btn-primary">Konzultácie</a>
+            <Link href="https://ownyourcycle.teachable.com">
+              <a className="btn-secondary">Kurz</a>
+            </Link>
+            <Link href="/konzultacia">
+              <a className="btn-secondary">Konzultácia</a>
             </Link>
             <Link href="/kontakt">
               <a className="btn-secondary">Kontakt</a>

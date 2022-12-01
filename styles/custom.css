@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .hero-gradient {
@@ -13,4 +13,10 @@ html {
 
 .hyphens {
   hyphens: auto;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(rgb(245, 156, 148), rgb(239, 112, 100));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

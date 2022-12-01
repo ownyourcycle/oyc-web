@@ -6,15 +6,15 @@ import TFH from '../assets/TFH.svg'
 import TTA from '../assets/TTA.svg'
 import TTC from '../assets/TTC.svg'
 
-const KonzultaciePage = () => {
+const KonzultaciaPage = () => {
   return (
     <>
       <Head>
-        <title>Konzultácie | Own Your Cycle</title>
+        <title>Konzultácia | Own Your Cycle</title>
       </Head>
       <div className="bg-red-50 pt-12 px-2">
         <section className="container mx-auto">
-          <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácie</h1>
+          <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácia</h1>
           <p className="mt-6 text-center text-2xl">Buď o krok bližšie k porozumeniu STM!</p>
           <p className="mt-6 text-center">Naplň svoj cieľ vďaka sympto-termálnej metóde.</p>
 
@@ -83,8 +83,8 @@ const KonzultaciePage = () => {
                   </li>
                   <li>
                     <strong>Pošli mi záznam s údajmi + tvoje otázky</strong> k záznamu na{' '}
-                    <Link href="mailto:hello@ownyourcycle.com">
-                      <a>hello@ownyourcycle.com</a>
+                    <Link href="mailto:ownyourcycle@gmail.com">
+                      <a>ownyourcycle@gmail.com</a>
                     </Link>
                     . Do predmetu mailu napíš &quot;KONZULTÁCIA&quot;.
                   </li>
@@ -175,4 +175,4 @@ const KonzultaciePage = () => {
   )
 }
 
-export default KonzultaciePage
+export default KonzultaciaPage
