@@ -3,7 +3,9 @@ import React, { useRef, useState } from 'react'
 
 export const Subscribe = () => {
   // 1. Create a reference to the input so we can fetch/clear it's value.
-  const inputEl = useRef(null)
+  const inputElfname = useRef(null)
+  const inputElemail = useRef(null)
+
   // 2. Hold a message in state to handle the response from our API.
   const [message, setMessage] = useState('')
 
@@ -21,7 +23,8 @@ export const Subscribe = () => {
     // 3. Send a request to our API with the user's email address.
     const res = await fetch('/api/subscribe', {
       body: JSON.stringify({
-        email: inputEl.current.value,
+        fname: inputElfname.current.value,
+        email: inputElemail.current.value,
       }),
       headers: {
         'Content-Type': 'application/json',
@@ -35,28 +38,43 @@ export const Subscribe = () => {
       // 4. If there was an error, update the message in state.
       setMessage('Nastala chyba. Pravdepodobne ste už prihlásený/á alebo ste zadali nesprávny e-mail.')
       console.error(error)
-
       return
     }
 
     // 5. Clear the input value and show a success message.
-    inputEl.current.value = ''
+    inputElfname.current.value = ''
+    inputElemail.current.value = ''
+
     setMessage('Hurááá! 🎉 Odber prebehol úspešne.')
   }
 
   return (
-    <form onSubmit={subscribe} className="flex flex-col items-center">
+    <form onSubmit={subscribe} className="flex flex-col items-center gap-2">
       <div className="flex items-center gap-2">
-        <label htmlFor="email-input" className="font">
+        {/* <label htmlFor="name-input" className="font">
+          Meno
+        </label> */}
+        <input
+          id="name-input"
+          name="name"
+          placeholder="Krstné meno"
+          ref={inputElfname}
+          required
+          type="text"
+          className="px-2 py-2 border"
+        />
+      </div>
+      <div className="flex items-center gap-2">
+        {/* <label htmlFor="email-input" className="font">
           E-mail
-        </label>
+        </label> */}
         <input
           id="email-input"
           name="email"
-          placeholder="tvoj@email.com"
-          ref={inputEl}
+          ref={inputElemail}
           required
           type="email"
+          placeholder="E-mailová adresa"
           className="px-2 py-2 border"
         />
       </div>
