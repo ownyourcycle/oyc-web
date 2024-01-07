@@ -1,5 +1,7 @@
 {
   "name": "oyc",
+  "version": "2.0.0",
+  "description": "Own Your Cycle",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,21 +11,33 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.75",
-    "next": "12.0.8",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.23.4",
+    "clsx": "^2.1.0",
+    "dayjs": "^1.11.10",
+    "next": "^14.0.4",
+    "next-sanity": "^7.0.7",
     "nextjs-google-analytics": "^2.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.23.4",
+    "styled-components": "^6.1.6",
+    "tailwind-merge": "^2.2.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.0",
-    "@types/node": "17.0.8",
-    "@types/react": "17.0.38",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/mailchimp__mailchimp_marketing": "^3.0.17",
+    "@types/node": "^18.2",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.2",
     "eslint": "8.6.0",
     "eslint-config-next": "^12.0.8",
     "eslint-config-prettier": "^8.3.0",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.13",
-    "typescript": "4.5.4"
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   }
 }
