@@ -39,7 +39,7 @@ export default function Post({ post }: { post: PostType }) {
           {/* <OtherBlogPosts post={blogPost} /> */}
           <div>
             Prečítajte si{' '}
-            <Link href="/novinky" className="text-primary-500 underline">
+            <Link href="/blog" className="text-primary-500 underline">
               ďalšie články
             </Link>
             .
