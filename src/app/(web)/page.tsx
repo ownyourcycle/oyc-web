@@ -32,6 +32,9 @@ const HomePage = () => {
             <Link href="/konzultacia" className="btn-secondary">
               Konzultácia
             </Link>
+            <Link href="/blog" className="btn-secondary">
+              Blog
+            </Link>
             <Link href="/kontakt" className="btn-secondary">
               Kontakt
             </Link>

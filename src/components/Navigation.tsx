@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 export const Navigation = () => {
+  // const pathname = usePathname()
+  // const isActive = (path: string) => {
+  //   return pathname === path ? 'text-gradient font-bold' : 'text-gray-600 hover:text-gray-400'
+  // }
+
   return (
     <nav className="flex items-center justify-between bg-white p-4 md:px-8">
       <div className="flex items-center">
@@ -24,6 +30,9 @@ export const Navigation = () => {
         </Link>
         <Link href="/konzultacia" className="text-gray-600 hover:text-gray-400">
           Konzultácia
+        </Link>
+        <Link href="/blog" className="text-gray-600 hover:text-gray-400">
+          Blog
         </Link>
         <Link href="/kontakt" className="text-gray-600  hover:text-gray-400">
           Kontakt
