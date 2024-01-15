@@ -79,9 +79,11 @@ export const Subscribe = () => {
           className="px-2 py-2 border"
         />
       </div>
-      <div className="mt-4 flex gap-2 items-center prose">
+      <div className="mt-4 flex  gap-2 items-center prose">
         <input type="checkbox" checked={agree} onChange={() => setAgree(!agree)} />
-        Súhlasím so <Link href="ochrana-osobnych-udajov">Zásadami ochrany súkromia.</Link>
+        <div>
+          Súhlasím so <Link href="ochrana-osobnych-udajov">Zásadami ochrany súkromia.</Link>
+        </div>
       </div>
       <div className="mt-4 flex flex-start">
         <button className="btn-gray" type="submit">

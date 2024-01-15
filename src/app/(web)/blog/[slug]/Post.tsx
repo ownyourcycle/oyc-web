@@ -23,23 +23,22 @@ export default function Post({ post }: { post: PostType }) {
         ) : (
           <div className="absolute h-full w-full bg-brand" />
         )}
-        <div className="container relative mx-auto flex flex-col gap-8 py-16">
+        <div className="container relative mx-auto flex flex-col gap-8 py-16 px-4">
           <h1 className="text-3xl font-bold text-white md:text-6xl">{post.title}</h1>
           <BlogPostAuthor post={post} />
         </div>
       </div>
 
-      <div className="container mx-auto flex flex-row overflow-hidden py-6">
+      <div className="container mx-auto flex flex-row overflow-hidden pt-4 px-4">
         <BlogBreadcrumbs post={post} />
       </div>
 
-      <div className="container mx-auto flex flex-col items-start justify-start gap-32 pb-16 md:flex-row">
-        <div className="prose mt-10 flex-grow">
+      <div className="container mx-auto flex flex-col items-start justify-start gap-8 pt-4 pb-8 px-4 md:flex-row">
+        <div className="prose flex-grow">
           <PortableText value={post.body} components={portableComponents} />
         </div>
         <div className="flex max-w-md flex-col gap-8">
           <h2 className="text-2xl font-medium">Ďalšie články</h2>
-
           <OtherBlogPosts post={post} />
           <div>
             Prečítajte si{' '}

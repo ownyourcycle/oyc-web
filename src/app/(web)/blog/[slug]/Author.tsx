@@ -7,7 +7,7 @@ dayjs.locale('sk')
 
 export const BlogPostAuthor = ({ post }: { post: PostType }) => {
   return (
-    <div className="flex flex-row items-center gap-4 px-4">
+    <div className="flex flex-row items-center gap-4">
       {/* <div className="h-16 w-16 overflow-clip rounded-full bg-brand opacity-90 filter">
         <div className="aspect-h-1 aspect-w-1 relative overflow-hidden bg-brand">
           <Image

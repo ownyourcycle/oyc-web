@@ -9,13 +9,13 @@ export const metadata = {
 export default function KonzultaciaPage() {
   return (
     <>
-      <div className="bg-red-50 pt-12 px-2">
+      <div className="bg-red-50 py-8 px-4">
         <section className="container mx-auto">
           <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácia</h1>
           <p className="mt-6 text-center text-2xl">Buď o krok bližšie k porozumeniu STM!</p>
           <p className="mt-6 text-center">Naplň svoj cieľ vďaka sympto-termálnej metóde.</p>
 
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center flex-wrap mt-6">
             <Image src="images/TTA.svg" alt="TTA" width={200} height={200} />
             <Image src="images/TTC.svg" alt="TTC" width={200} height={200} />
             <Image src="images/TFH.svg" alt="TFH" width={200} height={200} />
@@ -97,9 +97,9 @@ export default function KonzultaciaPage() {
           </div>
         </section>
 
-        <section className="container mx-auto">
+        <section className="container mx-auto px-3">
           <div className="mt-12">
-            <h2 className="text-4xl font-semibold text-center">Na čo nezabudnúť</h2>
+            <h2 className="text-3xl font-semibold text-center">Na čo nezabudnúť</h2>
             <div className="md:w-1/2 mx-auto mt-6 prose">
               <p>
                 Na vyhodnotenie záznamu sú potrebné doplnkové informácie, prosím nezabudni mi ich dodať. V záznamovej
@@ -154,11 +154,11 @@ export default function KonzultaciaPage() {
           </div>
         </section>
 
-        <section className="container mx-auto">
-          <div className="flex mt-6 p-12 pb-24">
-            <h2 className="text-2xl font-bold p">Máš nejaké otázky?</h2>
-            <div className="pl-12">
-              <p className="pb-6">Je ti niečo nejasné? Neváhaj ma kontaktovať!</p>
+        <section className="container mx-auto px-4">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="text-2xl font-bold">Máš nejaké otázky?</h2>
+            <div className="flex flex-col gap-4">
+              <p className="">Je ti niečo nejasné? Neváhaj ma kontaktovať!</p>
               <Link href="/kontakt" className="btn-secondary">
                 Kontaktuj ma!
               </Link>

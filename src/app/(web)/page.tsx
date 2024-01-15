@@ -25,7 +25,7 @@ const HomePage = () => {
           <div className="mt-12 flex justify-center">
             <Image src="/images/OYC.svg" alt="TTA" width={400} height={400} />
           </div>
-          <div className="flex justify-center gap-2 mt-12">
+          <div className="flex justify-center flex-col md:flex-row gap-2 mt-12">
             <Link href="https://ownyourcycle.teachable.com" className="btn-secondary">
               Kurz
             </Link>

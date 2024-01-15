@@ -4,10 +4,16 @@ import Posts from './Posts'
 export default async function Blog() {
   const posts = await getPostsByDate()
 
+  // 1 clanok
+  // 2-4 clanky
+  // 5+ clankov
+  const title =
+    posts.length === 1 ? '1 článok' : posts.length < 5 ? `${posts.length} články` : `${posts.length} článkov`
+
   return (
     <div className="container mx-auto px-8">
-      <h1 className="font-bold text-xl">Blog</h1>
-      <div className="pt-8">
+      <h1 className="text-xl font-bold">{title}</h1>
+      <div className="py-8">
         <Posts posts={posts} />
       </div>
     </div>
