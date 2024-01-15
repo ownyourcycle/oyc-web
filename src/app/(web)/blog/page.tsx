@@ -18,3 +18,5 @@ export const metadata = {
   title: 'Blog | Own Your Cycle',
   description: 'Menštruačný cyklus je zrkadlom nášho zdravia',
 }
+
+export const dynamic = 'force-dynamic'
