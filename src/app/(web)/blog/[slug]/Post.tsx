@@ -1,10 +1,13 @@
-'use client'
+// 'use client'
 
 import Image from 'next/image'
 import { PortableText } from '@portabletext/react'
 import { PostType } from '~/types/PostType'
 import { portableComponents } from '~/components/portableComponents'
 import Link from 'next/link'
+import { BlogBreadcrumbs } from './Breadcrumbs'
+import { BlogPostAuthor } from './Author'
+import { OtherBlogPosts } from './OtherPosts'
 
 export default function Post({ post }: { post: PostType }) {
   return (
@@ -22,12 +25,12 @@ export default function Post({ post }: { post: PostType }) {
         )}
         <div className="container relative mx-auto flex flex-col gap-8 py-16">
           <h1 className="text-3xl font-bold text-white md:text-6xl">{post.title}</h1>
-          {/* <BlogPostAuthor post={blogPost} /> */}
+          <BlogPostAuthor post={post} />
         </div>
       </div>
 
       <div className="container mx-auto flex flex-row overflow-hidden py-6">
-        {/* <BlogBreadcrumbs post={blogPost} /> */}
+        <BlogBreadcrumbs post={post} />
       </div>
 
       <div className="container mx-auto flex flex-col items-start justify-start gap-32 pb-16 md:flex-row">
@@ -36,7 +39,8 @@ export default function Post({ post }: { post: PostType }) {
         </div>
         <div className="flex max-w-md flex-col gap-8">
           <h2 className="text-2xl font-medium">Ďalšie články</h2>
-          {/* <OtherBlogPosts post={blogPost} /> */}
+
+          <OtherBlogPosts post={post} />
           <div>
             Prečítajte si{' '}
             <Link href="/blog" className="text-primary-500 underline">

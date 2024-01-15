@@ -12,3 +12,5 @@ export default async function Page({ params }: { params: any }) {
   const post = await getPost(params.slug)
   return <Post post={post} />
 }
+
+export const dynamic = 'force-dynamic'

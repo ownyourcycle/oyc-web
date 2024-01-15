@@ -9,7 +9,11 @@ export const getPosts = async (): Promise<PostType[]> => {
   return response.map((post: any) => {
     return PostSchema.parse({
       ...post,
-      author: null,
+      author: {
+        ...post.author,
+        slug: post.author.slug?.current,
+        image: getImage(post.author.image),
+      },
       slug: post.slug?.current,
       mainImage: getImage(post.mainImage),
     })
@@ -22,7 +26,11 @@ export const getPostsByDate = async (): Promise<PostType[]> => {
   return response.map((post: any) => {
     return PostSchema.parse({
       ...post,
-      author: null,
+      author: {
+        ...post.author,
+        slug: post.author.slug?.current,
+        image: getImage(post.author.image),
+      },
       slug: post.slug?.current,
       mainImage: getImage(post.mainImage),
     })
@@ -34,7 +42,11 @@ export const getPost = async (slug: string): Promise<PostType> => {
 
   return PostSchema.parse({
     ...response,
-    author: null,
+    author: {
+      ...response.author,
+      slug: response.author.slug?.current,
+      image: getImage(response.author.image),
+    },
     slug: response.slug.current,
     mainImage: getImage(response.mainImage),
   })

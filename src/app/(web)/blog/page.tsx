@@ -5,9 +5,9 @@ export default async function Blog() {
   const posts = await getPostsByDate()
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-8">
       <h1 className="font-bold text-xl">Blog</h1>
-      <div className="">
+      <div className="pt-8">
         <Posts posts={posts} />
       </div>
     </div>
