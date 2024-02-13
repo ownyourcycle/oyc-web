@@ -31,6 +31,9 @@ export const MobileNavigation = () => {
         >
           ✨ Kurz ✨
         </Menu.Item>
+        <Menu.Item component={Link} href="/seminar-zilina" className="text-gray-600 text-xl hover:text-gray-400">
+          SEMINÁR 23. 3. V ŽILINE
+        </Menu.Item>
         <Menu.Item component={Link} href="/konzultacia" className="text-gray-600 text-xl  hover:text-gray-400">
           Konzultácia
         </Menu.Item>

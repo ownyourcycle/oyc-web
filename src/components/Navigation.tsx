@@ -25,6 +25,9 @@ export const Navigation = () => {
         <Link href="https://ownyourcycle.teachable.com" className="text-gradient font-bold">
           ✨ Kurz ✨
         </Link>
+        <Link href="/seminar-zilina" className="text-gray-600 hover:text-gray-400">
+          SEMINÁR 23. 3. V ŽILINE
+        </Link>
         <Link href="/konzultacia" className="text-gray-600 hover:text-gray-400">
           Konzultácia
         </Link>
