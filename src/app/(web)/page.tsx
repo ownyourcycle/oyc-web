@@ -29,6 +29,9 @@ const HomePage = () => {
             <Link href="https://ownyourcycle.teachable.com" className="btn-secondary">
               Kurz
             </Link>
+            <Link href="/seminar-zilina" className="btn-secondary">
+              SEMINÁR 23. 3. V ŽILINE
+            </Link>
             <Link href="/konzultacia" className="btn-secondary">
               Konzultácia
             </Link>
