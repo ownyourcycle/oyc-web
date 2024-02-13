@@ -44,10 +44,13 @@ export default function SeminarZilinaPage() {
               optimalizovať svoju šancu na počatie a udržanie tehotenstva či kedy mať ideálny čas na styk na otehotnenie
               vďaka porozumeniu svojmu menštruačnému cyklu a plodných dní – a to nech je váš cyklus akokoľvek dlhý.
             </p>
-            <strong>
-              80 % žien sa vo všeobecnosti otehotnie do 1 roka snaženia sa. Štúdie ukazujú, že s využitím sledovania
-              cyklov pomocou sympto-termálnej metódy sa to rovnakému percentu podarí už po 6 mesiacoch.
-            </strong>
+
+            <blockquote>
+              <strong>
+                80% žien vo všeobecnosti otehotnie do 1 roka snaženia sa. Štúdie ukazujú, že s využitím sledovania
+                cyklov pomocou sympto-termálnej metódy sa to rovnakému percentu podarí už po 6 mesiacoch.
+              </strong>
+            </blockquote>
             <h3>Základné témy:</h3>
             <ul>
               <li> reprodukčná anatómia, menštruačný cyklus a prirodzené plánovanie rodičovstva</li>
@@ -77,19 +80,23 @@ export default function SeminarZilinaPage() {
               šance
               <li> ste zdravotníci a chceli by ste rozšíriť svoje obzory v oblasti prirodzeného počatia</li>
             </ul>
-            Pokiaľ momentálne nemáte menštruačný cyklus alebo máte v páre vážny zdravotný problém brániaci prirodzenému
-            otehotneniu (žena bez oboch vaječníkov, muž bez tvorby spermií a pod.), odporúčame sa ozvať vopred s
-            bližšími informáciami pre určenie vhodnosti tohto kurzu.
+            <p>
+              Pokiaľ momentálne nemáte menštruačný cyklus alebo máte v páre vážny zdravotný problém brániaci
+              prirodzenému otehotneniu (žena bez oboch vaječníkov, muž bez tvorby spermií a pod.), odporúčame sa ozvať
+              vopred s bližšími informáciami pre určenie vhodnosti tohto kurzu.
+            </p>
             <h3>Kto vás kurzom prevedie:</h3>
-            <strong>Ing. Michaela Šenková</strong> – certifikovaná lektorka sympto-termálnej metódy – vedecky podloženej
-            metódy na sledovanie menštruačných cyklov. Lektorka prešla niekoľkými kurzami sympto-termálnej metódy a
-            ďalšími kurzami v oblasti počatia a podpory plodnosti páru. STM študovala v Českej republike a svoju
-            certifikáciu získala v akreditovanom kurze pod vedením gynekologičky v Brne. Je zakladateľkou projektu{' '}
-            <strong>Own Your Cycle</strong>, v ktorom učí ženy porozumieť svojej plodnosti a dosiahnuť tak svoj cieľ
-            prirodzenou cestou – či už ide o snahu otehotnieť, vyhnúť sa počatiu či ozdraviť svoje cykly. Vďaka svojmu
-            projektu pomohla už stovkám žien zorientovať sa vo svojich cykloch a prirodzene otehotnieť. Úspešne sa jej
-            podarilo ozdraviť aj vlastné cykly po diagnostikovaní syndrómu polycytických vaječníkov (PCOS), a to aj
-            vďaka sympto-termálnej metóde.
+            <p>
+              <strong>Ing. Michaela Šenková</strong> – certifikovaná lektorka sympto-termálnej metódy – vedecky
+              podloženej metódy na sledovanie menštruačných cyklov. Lektorka prešla niekoľkými kurzami sympto-termálnej
+              metódy a ďalšími kurzami v oblasti počatia a podpory plodnosti páru. STM študovala v Českej republike a
+              svoju certifikáciu získala v akreditovanom kurze pod vedením gynekologičky v Brne. Je zakladateľkou
+              projektu <strong>Own Your Cycle</strong>, v ktorom učí ženy porozumieť svojej plodnosti a dosiahnuť tak
+              svoj cieľ prirodzenou cestou – či už ide o snahu otehotnieť, vyhnúť sa počatiu či ozdraviť svoje cykly.
+              Vďaka svojmu projektu pomohla už stovkám žien zorientovať sa vo svojich cykloch a prirodzene otehotnieť.
+              Úspešne sa jej podarilo ozdraviť aj vlastné cykly po diagnostikovaní syndrómu polycytických vaječníkov
+              (PCOS), a to aj vďaka sympto-termálnej metóde.
+            </p>
             <p>
               Cena kurzu je <strong>119€</strong> s DPH. Vaša rezervácia je kompletná až po uhradení poplatku na číslo
               účtu <strong>SK85 0200 0000 0044 0835 6156</strong>. Variabilný symbol: <strong>201502</strong>. Do
