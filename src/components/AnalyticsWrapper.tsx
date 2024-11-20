@@ -18,7 +18,7 @@ export function AnalyticsWrapper({ gaTrackingId, gtmId }: { gaTrackingId: string
     <>
       {/* Head Scripts */}
       {consent === 'accepted' && (
-        <>
+        <head>
           <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`} strategy="afterInteractive" />
           <Script id="google-analytics-config" strategy="afterInteractive">
             {`
@@ -37,7 +37,7 @@ export function AnalyticsWrapper({ gaTrackingId, gtmId }: { gaTrackingId: string
               })(window,document,'script','dataLayer','${gtmId}');
             `}
           </Script>
-        </>
+        </head>
       )}
 
       {/* Body Scripts */}
