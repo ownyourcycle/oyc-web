@@ -28,8 +28,8 @@ export const Navigation = () => {
         {/* <Link href="/seminar-zilina" className="text-gray-600 hover:text-gray-400">
           SEMINÁR 23. 3. V ŽILINE
         </Link> */}
-        <Link href="/konzultacia" className="text-gray-600 hover:text-gray-400">
-          Konzultácia
+        <Link href="/konzultacie" className="text-gray-600 hover:text-gray-400">
+          Konzultácie
         </Link>
         <Link href="/blog" className="text-gray-600 hover:text-gray-400">
           Blog

@@ -10,7 +10,7 @@ export default function KonzultaciaPage() {
   return (
     <div className="bg-red-50 py-8 px-4 h-full flex-grow">
       <section className="container mx-auto">
-        <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácia</h1>
+        <h1 className="mt-12 text-6xl text-center font-semibold">Konzultácie</h1>
         <p className="mt-6 text-center text-2xl">Buď o krok bližšie k porozumeniu svojich cyklov!</p>
         <p className="mt-6 text-center">Naplň svoj cieľ vďaka sympto-termálnej metóde.</p>
 
@@ -20,7 +20,7 @@ export default function KonzultaciaPage() {
           <Image src="images/TFH.svg" alt="TFH" width={200} height={200} />
         </div>
         <div className="flex justify-center my-6 gap-4 flex-wrap">
-          <Link href="/konzultacia/email" className="btn-primary">
+          <Link href="/konzultacie/email" className="btn-primary">
             Emailová konzultácia
           </Link>
           <Link href="https://calendly.com/ownyourcycle/videokonzultacia" target="_blank" className="btn-primary">

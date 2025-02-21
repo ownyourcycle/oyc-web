@@ -32,8 +32,8 @@ const HomePage = () => {
             {/* <Link href="/seminar-zilina" className="btn-secondary">
               SEMINÁR 23. 3. V ŽILINE
             </Link> */}
-            <Link href="/konzultacia" className="btn-secondary">
-              Konzultácia
+            <Link href="/konzultacie" className="btn-secondary">
+              Konzultácie
             </Link>
             <Link href="/blog" className="btn-secondary">
               Blog
